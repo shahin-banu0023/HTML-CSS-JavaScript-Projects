@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 80%;
+            height:80px;
+            padding: 44px;
+            background-color: antiquewhite;
+            margin:auto;
+            margin-top: 20%;
+        }
+        .child-container{
+            width:70%;
+            height:60px;
+            padding: 24px;
+            background-color: rgb(152, 84, 0);
+            margin:auto;
+        }
+        .child{
+            width: 60%;
+            height: 40px;
+            padding: 14px;
+            background-color: yellow;
+            margin:auto;
+            font-size: 40px;
+            font-weight: bolder;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="child-container">
+            <div class="child">
+            </div>
+        </section>
+    </div>
+    <script>
+        function randClr(){
+            let c1=Math.floor(Math.random()*255);
+            let c2=Math.floor(Math.random()*255);
+            let c3=Math.floor(Math.random()*255);
+            return `rgb(${c1} ${c2} ${c3})`;
+        }
+        document.querySelector(".container").addEventListener("click",()=>{
+            alert("Hlo the container class was clicked")
+        });
+        document.querySelector(".child").addEventListener("click",(e)=>{
+            e.stopPropagation();
+
+            alert("Yayy! I was clicked on child class")
+        });
+        document.querySelector(".child-container").addEventListener("click",()=>{
+
+            alert("Woooowww! ")
+        });
+        let a=setInterval(()=>{
+            document.querySelector(".child").style.backgroundColor=randClr();
+        },100);
+        console.log(a);
+        clearInterval(a);
+        setInterval(()=>{
+            document.querySelector(".container").style.backgroundColor=randClr();
+        },100);
+        setInterval(()=>{
+            document.querySelector(".child-container").style.backgroundColor=randClr();
+        },100);
+        setInterval(()=>{
+            document.querySelector(".child").style.color=randClr();
+        },50)
+    </script>
+</body>
+</html>
