@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=="UTF-8">
+    <meta name="viewport" content="width=device_width,initial_scale=1.0">
+    <title>First website of sigma development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .super-parent {
+            background-color: rgb(233, 237, 240);
+            width: 100vw;
+            height: 100vh;
+            padding-top: 15px;
+            overflow: hidden;   
+        }
+
+        .parent {
+            width: 30vw;
+            height: 90vh;
+            border: 2px solid rgb(223, 221, 219);
+            border-radius: 15px;
+            background-color: white;
+            padding: 10px;
+            margin: auto;
+        }
+
+        .child {
+            margin: 0px 0px 20px 0px;
+        }
+
+        .btn {
+            padding: 5px 20px 5px 20px;
+            border-radius: 15px;
+            border: rgb(170, 165, 165);
+            font-size: 20px;
+        }
+
+        .singleBtn {
+            color: rgb(0, 110, 255);
+            background-color: rgb(160, 230, 247);
+            padding: 10px 25px 10px 25px;
+        }
+
+        p {
+            margin: 10px 0px 40px 5px;
+        }
+        #singleBtn{
+            display: flex;
+            justify-content: center;
+        }
+        h2{
+            margin:20px 0px 10px 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="super-parent">
+        <div class="parent">
+            <div class="child">
+                <img width="460px"src="card1.jpg">
+            </div>
+            <div>
+                <button class="btn">Sun</button>
+                <button class="btn">Star</button>
+                <button class="btn">Moon</button>
+            </div>
+            <h2>Sun Star Moon</h2>
+            <p>The Sun, Moon, and stars are fundamental celestial bodies: the Sun is our solar system's star, a giant
+                plasma ball providing light and heat via nuclear fusion, vital for life. The Moon is Earth's natural
+                satellite, orbiting us and reflecting sunlight, causing tides and phases. Stars are distant, luminous
+                suns, appearing as twinkling points, with constellations being patterns of them, while our Sun is just
+                one average star in the vast universe. </p>
+
+            <div id="singleBtn">
+                <button class="btn singleBtn">Read more</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
