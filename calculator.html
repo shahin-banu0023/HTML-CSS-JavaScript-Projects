@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<meta charset="UTF-8">
+	<meta name="viewport"content="width=device-width,initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+	<!--<div class="container">
+		<div class="display">
+			<input type="text" id="display" disabled>
+		</div>
+		<div class="operation">
+			<div id="div1">
+				<button class="operator">AC</button>
+				<button class="operator">DEL</button>
+				<button class="operator">/</button>
+				<button class="operator">*</button>
+			</div>
+			<div id="div2">
+				<button class="number">7</button>
+				<button class="number">8</button>
+				<button class="number">9</button>			
+				<button class="operator">-</button>
+			</div>
+			<div id="div3">
+				<button class="number">6</button>
+				<button class="number">5</button>
+				<button class="number">4</button>
+				<button class="operator">+</button>
+			</div>
+			<div id="div4">
+				<button class="number">1</button>
+				<button class="number">2</button>
+				<button class="number">3</button>
+				<button class="operator">+</button>
+			</div>
+			<div id="div5">
+				<button class="number" id="zero-num">0</button>
+				<button class="number">.</button>
+			</div>
+			</div>
+		</div>
+	</div>-->
+	<div class="calcu">
+		<div class="container">
+			<form>
+				<div class="output">
+					<input type="text" id="res">
+				</div>
+				<div class="btn">
+					<input type="button" value="C" onclick="Clear()" id="clear">
+					<input type="button" value="?" onclick="Back()" id="backspace">
+					<input type="button" value="%" onclick="Solve('%')">
+					<input type="button" value="/" onclick="Solve('/')">
+					<br>
+					<input type="button" value="7" onclick="Solve('7')">
+					<input type="button" value="8" onclick="Solve('8')">
+					<input type="button" value="9" onclick="Solve('9')">
+					<input type="button" value="x" onclick="Solve('*')">
+					<br>
+					<input type="button" value="4" onclick="Solve('4')">
+					<input type="button" value="5" onclick="Solve('5')">
+					<input type="button" value="6" onclick="Solve('6')">
+					<input type="button" value="-" onclick="Solve('-')">
+					<br>
+					<input type="button" value="1" onclick="Solve('1')">
+					<input type="button" value="2" onclick="Solve('2')">
+					<input type="button" value="3" onclick="Solve('3')">
+					<input type="button" value="+" onclick="Solve('+')">
+					<br>
+					<input type="button" value="00" onclick="Solve('00')">
+					<input type="button" value="0" onclick="Solve('0')">
+					<input type="button" value="." onclick="Solve('.')">
+					<input type="button" value="=" onclick="Result()">
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="calculator.js"></script>
+</body>
+</html>
+			
